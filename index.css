@@ -1,0 +1,54 @@
+
+
+#header-nav{
+    background-color: gray;
+    border-radius: 0;
+    border: 2px solid black;
+    height: 60px;
+    margin-bottom: 0;
+    
+}
+.navbar-brand{
+    padding:0;
+}
+.navbar-brand h1{
+
+   font-family: times new roman;
+   color: black;
+   margin-top: 4px;
+
+}
+#nav-list{
+    margin-top:0;
+    
+    
+}
+#nav-list a{
+    color:black;
+    font-family: times new roman;
+    text-align: center;
+}
+#nav-list a:hover{
+    background: #E7E7E7;
+}
+#nav-list li{
+    background-color: white;
+    color: black;
+    background-color: gray;
+    border-bottom: 2px solid black;
+}
+h1{
+    text-align: center;
+    font-family: times new roman;
+    margin-top: 180px;
+    margin-bottom: 50px;
+}
+section div{
+    text-align: center;
+    font-family: times new roman;
+    border:1px solid black;
+    margin-bottom: 30px;
+    background-color: gray;
+}
+
+
