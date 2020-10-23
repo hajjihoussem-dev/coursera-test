@@ -1,0 +1,51 @@
+Cours Coursera: HTML, CSS et Javascript pour les développeurs Web
+
+Dernière mission et vous avez terminé!
+
+Temps pour terminer: environ 30 minutes.
+
+Posez des questions dans les discussions si vous êtes bloqué! Nous apprenons tous, et le fait de rester coincé puis décoller (même avec l'aide de quelqu'un) peut être une expérience d'apprentissage très précieuse!
+
+Résumé: Dans cette mission, nous allons nous amuser un peu avec notre application Web de restaurant intégrée. La page d'accueil de notre application Web contient 3 vignettes cliquables: Menu, Promotions et Carte. Si vous cliquez sur la vignette Specials, vous serez redirigé vers une page de catégorie unique où tous les éléments de menu qui appartiennent à la catégorie de menu Specials seront affichés. Votre tâche dans cette tâche consiste à modifier ce comportement de sorte que lorsque l'utilisateur clique sur la vignette Promotions, l'application Web amène l'utilisateur à une page de menu de catégorie unique aléatoire, répertoriant les éléments de menu dans la catégorie, que ce soit "Déjeuner", "Dîner "," Sushi ", etc. De cette façon, toute catégorie aléatoire peut devenir les Spéciaux! Ce que c'est drôle! (ne pas! :-) )
+
+Pour ce faire, nous devons modifier l'extrait de code HTML d'accueil et, en plus de le tirer dynamiquement du serveur, insérer également une catégorie aléatoire short_name dans l'appel de fonction du code suivant. Auparavant, le code pour envoyer l'utilisateur à la catégorie "Promotions" était le suivant:
+
+<a href="#" onclick="$dc.loadMenuItems('SP');">
+Pour cette affectation, nous avons changé cette ligne pour la préparer à une catégorie aléatoire short_name comme suit:
+
+<a href="#" onclick="$dc.loadMenuItems({{randomCategoryShortName}});">
+Voici ce dont vous aurez besoin pour terminer le devoir:
+
+(Si vous ne l'avez pas déjà fait) Créez un compte GitHub.com et un référentiel que vous utiliserez pour cette classe.
+(Si vous ne l'avez pas déjà fait) Suivez les instructions de la vidéo de configuration du développement (début du module 1) pour savoir comment créer un référentiel et le configurer de manière à pouvoir héberger et afficher vos pages Web finies sur les pages GitHub, c'est-à-dire GitHub.io nom de domaine. Vous devrez fournir cette URL pour votre examen par les pairs.
+
+Créez un dossier dans votre référentiel qui servira de dossier conteneur pour votre solution à cette affectation. Tu peux appeler ça comme tu le veux. Par exemple, module5-solution ou mod5_solution, etc.
+
+Vous devrez télécharger les fichiers de démarrage pour ce projet et les copier dans votre dossier de conteneur de solution (par exemple, dans 'module5-solution'). Étant donné que les affectations et le code de démarrage sont mis à jour de temps en temps, ne supposez pas que vous avez déjà la dernière version sur votre système. La meilleure façon de vous assurer que vous travaillez avec le tout dernier code de démarrage est soit de 'git clone' le dépôt fullstack-course4 dans un nouveau répertoire OU, si vous avez déjà fait 'git clone' auparavant, vous pouvez simplement ouvrir votre invite de commande (cmd sur Windows ou Terminal sur Mac), accédez au dossier dans lequel le référentiel fullstack-course4 a été précédemment cloné et faites: git pull
+
+Cela mettra à jour votre référentiel local avec les modifications apportées depuis la dernière mise à jour.
+
+Pour rappel, l'URL complète du référentiel est: https://github.com/jhu-ep-coursera/fullstack-course4
+
+Une fois que vous avez mis à jour votre référentiel, copiez tout le contenu du dossier fullstack-course4 / assignments / assignment5 / assignment5-solution-starter dans votre dossier de conteneur de solutions nouvellement créé pour cette affectation, par exemple, module5-solution.
+
+Une fois cela fait, vous êtes prêt à commencer à coder la solution.
+
+REMARQUE: le code fourni ne fonctionnera pas. C'est à vous de suivre les instructions pour le faire fonctionner.
+
+Vous n'êtes PAS autorisé à modifier le fichier home-snippet.html. Tout ajustement de la valeur de la propriété randomCategoryShortName doit être effectué dans le code Javascript.
+
+Il existe 4 à 5 étapes assez simples pour implémenter la fonctionnalité requise.
+
+Ouvrez le fichier js / script.js.
+Trouvez TODO: STEP 0 et suivez les instructions jusqu'à ce que vous en ayez terminé avec TODO: STEP 4.
+
+Si vous avez regardé les conférences, le code devrait vous être très familier.
+
+Une fois que vous avez terminé, vérifiez que la fonctionnalité souhaitée fonctionne correctement. Utilisez Browser Sync ou déployez votre solution sur des pages GitHub.
+Chargez la page d'accueil dans le navigateur.
+Cliquez sur la vignette Promotions. Une seule catégorie de page avec une liste d'éléments de menu pour certaines catégories devrait apparaître.
+Cliquez sur le logo du restaurant pour revenir à la page d'accueil.
+Cliquez à nouveau sur la vignette Promotions. Très probablement, une page de catégorie de page unique différente sera affichée.
+
+Répétez cette opération plusieurs fois pour vous assurer que la plupart du temps, vous voyez une page de catégorie différente.
